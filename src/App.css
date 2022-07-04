@@ -11,6 +11,29 @@
 	background-color: grey;
 }
 
+.NavMenuTitle {
+	font-size: 50px;
+	margin: 0px;
+	padding: 10px;
+	padding-bottom: 15px;
+	background-color: grey;
+	color: white;
+}
+
+.sidenav li > a {
+	font-size: 20px;
+	height: 100%;
+}
+
+.sidenav li:nth-of-type(1) {
+	padding: 0px;
+}
+
+.NavItem {
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
 	.App-logo {
 		animation: App-logo-spin infinite 20s linear;

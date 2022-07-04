@@ -29,8 +29,13 @@ function App() {
 						preventScrolling: true,
 					}}
 				>
-					<NavItem onClick={function noRefCheck() {}}>Getting started</NavItem>
-					<NavItem href="components.html">Components</NavItem>
+					<h2 className="NavMenuTitle">Menu</h2>
+					<Link to={'/'} className="nav-link NavItem">
+						Getting Started
+					</Link>
+					<Link to={'/'} className="nav-link NavItem">
+						Dashboard
+					</Link>
 				</Navbar>
 				<Routes>
 					<Route exact path="/" element={<Dashboard />} />
