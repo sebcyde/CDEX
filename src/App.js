@@ -1,7 +1,9 @@
 import './App.css';
+import M from 'materialize-css';
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import { Navbar, Icon, NavItem } from 'react-materialize';
+import { Navbar, Icon, NavItem, Button } from 'react-materialize';
+
 import Dashboard from './Components/Dashboard/Dashboard';
 import LoadingScreen from './Components/Loading Screen/LoadingScreen';
 
@@ -52,6 +54,29 @@ function App() {
 								Dashboard
 							</Link>
 						</Navbar>
+						<Button
+							className="red"
+							fab={{
+								direction: 'left',
+								hoverEnabled: false,
+							}}
+							floating
+							large
+							node="button"
+						>
+							<Button floating icon={<Icon>insert_chart</Icon>} node="button" />
+							<Button floating icon={<Icon>format_quote</Icon>} node="button" />
+							<Button floating icon={<Icon>publish</Icon>} node="button" />
+							<Button
+								floating
+								icon={
+									<Icon>
+										<span class="material-symbols-outlined">logout</span>
+									</Icon>
+								}
+								node="button"
+							/>
+						</Button>
 						<Routes>
 							<Route exact path="/" element={<Dashboard />} />
 							{/* <Route path="/contact" component={} />

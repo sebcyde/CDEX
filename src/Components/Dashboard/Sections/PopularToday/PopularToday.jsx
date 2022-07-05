@@ -7,11 +7,11 @@ function PopularToday() {
 		<div className="PTParentContainer">
 			<span className="MoreButtonContainer">
 				<Button flat node="button" waves="light">
-					<span class="material-symbols-outlined PTMoreButton">more_horiz</span>
+					<span class="material-symbols-outlined PTMoreButton">
+						expand_more
+					</span>
 				</Button>
-      </span>
-      
-      
+			</span>
 		</div>
 	);
 }
