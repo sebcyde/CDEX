@@ -2,9 +2,10 @@
 	width: 90%;
 	height: fit-content;
 	padding: 10px;
-	border: $BorderColour;
+	border: 1px solid grey;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 30px;
 	border-radius: 15px;
 }
 
@@ -13,13 +14,51 @@
 	height: fit-content;
 	display: flex;
 	flex-direction: row;
-	justify-content: end;
+	justify-content: space-between;
+	align-items: center;
+
+	h2 {
+		margin: 0px;
+		padding-left: 15px;
+		font-size: 30px;
+	}
 
 	.PTMoreButton {
 		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.btn-flat {
 		padding: 0 1rem;
+	}
+}
+
+.CoinsContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin-top: 10px;
+
+	.CoinContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		height: fit-content;
+		margin: 10px;
+
+		.CoinLeftSide {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.CoinName {
+			font-size: 15px;
+			margin: 0px;
+			margin-left: 5px;
+			padding: 5px;
+		}
 	}
 }

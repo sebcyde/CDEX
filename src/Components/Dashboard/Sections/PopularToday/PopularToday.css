@@ -4,9 +4,10 @@
   height: -moz-fit-content;
   height: fit-content;
   padding: 10px;
-  border: 1px solid rgba(126, 126, 126, 0.413);
+  border: 1px solid grey;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
   border-radius: 15px;
 }
 
@@ -17,11 +18,47 @@
   height: fit-content;
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: space-between;
+  align-items: center;
+}
+.MoreButtonContainer h2 {
+  margin: 0px;
+  padding-left: 15px;
+  font-size: 30px;
 }
 .MoreButtonContainer .PTMoreButton {
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .MoreButtonContainer .btn-flat {
   padding: 0 1rem;
+}
+
+.CoinsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.CoinsContainer .CoinContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 10px;
+}
+.CoinsContainer .CoinContainer .CoinLeftSide {
+  display: flex;
+  flex-direction: row;
+}
+.CoinsContainer .CoinContainer .CoinName {
+  font-size: 15px;
+  margin: 0px;
+  margin-left: 5px;
+  padding: 5px;
 }/*# sourceMappingURL=PopularToday.css.map */
