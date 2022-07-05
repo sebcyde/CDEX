@@ -1,0 +1,25 @@
+.PTParentContainer {
+	width: 90%;
+	height: fit-content;
+	padding: 10px;
+	border: 1px solid gray;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+}
+
+.MoreButtonContainer {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+
+	.PTMoreButton {
+		color: white;
+	}
+
+	.btn-flat {
+		padding: 0 1rem;
+	}
+}
